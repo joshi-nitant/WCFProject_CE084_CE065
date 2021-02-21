@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MessageService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IMessageService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="600000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <cdp:CompositeDuplex xmlns:cdp="http://schemas.microsoft.com/net/2006/06/duplex" />
+        <ow:OneWay xmlns:ow="http://schemas.microsoft.com/ws/2005/05/routing/policy" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IUserService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="600000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <cdp:CompositeDuplex xmlns:cdp="http://schemas.microsoft.com/net/2006/06/duplex" />
+        <ow:OneWay xmlns:ow="http://schemas.microsoft.com/ws/2005/05/routing/policy" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PiperchatService.Models" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Security.Cryptography" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMessageService_Connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connect" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_GetConnectedUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectedUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_GetConnectedUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectedUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_Disconnect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Disconnect" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_Disconnect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_ForwardToClient_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ForwardToClient" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_UsersConnected_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:UsersConnected" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_InsertUserRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserRecord" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_InsertUserRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_UpdateUserRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserRecord" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_UpdateUserRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DeleteUserRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserRecord" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DeleteUserRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_SearchUserRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserRecord" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_SearchUserRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetAllUserRecords_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserRecords" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetAllUserRecords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_Validate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Validate" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_Validate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IMessageService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Connect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/Connect" message="tns:IMessageService_Connect_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/SendMessage" message="tns:IMessageService_SendMessage_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetConnectedUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/GetConnectedUsers" message="tns:IMessageService_GetConnectedUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/GetConnectedUsersResponse" message="tns:IMessageService_GetConnectedUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Disconnect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/Disconnect" message="tns:IMessageService_Disconnect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/DisconnectResponse" message="tns:IMessageService_Disconnect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ForwardToClient">
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/ForwardToClient" message="tns:IMessageService_ForwardToClient_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UsersConnected">
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/UsersConnected" message="tns:IMessageService_UsersConnected_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IUserService">
+    <wsdl:operation name="InsertUserRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/InsertUserRecord" message="tns:IUserService_InsertUserRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/InsertUserRecordResponse" message="tns:IUserService_InsertUserRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/UpdateUserRecord" message="tns:IUserService_UpdateUserRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/UpdateUserRecordResponse" message="tns:IUserService_UpdateUserRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/DeleteUserRecord" message="tns:IUserService_DeleteUserRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/DeleteUserRecordResponse" message="tns:IUserService_DeleteUserRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/SearchUserRecord" message="tns:IUserService_SearchUserRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/SearchUserRecordResponse" message="tns:IUserService_SearchUserRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserRecords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetAllUserRecords" message="tns:IUserService_GetAllUserRecords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetAllUserRecordsResponse" message="tns:IUserService_GetAllUserRecords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Validate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/Validate" message="tns:IUserService_Validate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/ValidateResponse" message="tns:IUserService_Validate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSDualHttpBinding_IMessageService" type="tns:IMessageService">
+    <wsp:PolicyReference URI="#WSDualHttpBinding_IMessageService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connect">
+      <soap12:operation soapAction="http://tempuri.org/IMessageService/Connect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap12:operation soapAction="http://tempuri.org/IMessageService/SendMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectedUsers">
+      <soap12:operation soapAction="http://tempuri.org/IMessageService/GetConnectedUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Disconnect">
+      <soap12:operation soapAction="http://tempuri.org/IMessageService/Disconnect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardToClient">
+      <soap12:operation soapAction="http://tempuri.org/IMessageService/ForwardToClient" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsersConnected">
+      <soap12:operation soapAction="http://tempuri.org/IMessageService/UsersConnected" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSDualHttpBinding_IUserService" type="tns:IUserService">
+    <wsp:PolicyReference URI="#WSDualHttpBinding_IUserService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertUserRecord">
+      <soap12:operation soapAction="http://tempuri.org/IUserService/InsertUserRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserRecord">
+      <soap12:operation soapAction="http://tempuri.org/IUserService/UpdateUserRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserRecord">
+      <soap12:operation soapAction="http://tempuri.org/IUserService/DeleteUserRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserRecord">
+      <soap12:operation soapAction="http://tempuri.org/IUserService/SearchUserRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserRecords">
+      <soap12:operation soapAction="http://tempuri.org/IUserService/GetAllUserRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Validate">
+      <soap12:operation soapAction="http://tempuri.org/IUserService/Validate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MessageService">
+    <wsdl:port name="WSDualHttpBinding_IMessageService" binding="tns:WSDualHttpBinding_IMessageService">
+      <soap12:address location="http://localhost:8080/Messages" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8080/Messages</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="WSDualHttpBinding_IUserService" binding="tns:WSDualHttpBinding_IUserService">
+      <soap12:address location="http://localhost:8080/User" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8080/User</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

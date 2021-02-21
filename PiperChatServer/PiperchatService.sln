@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiperchatService", "PiperchatService\PiperchatService.csproj", "{EEA7F57A-B994-4D94-A3E4-6634398FD3BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiperchatHost", "PiperchatHost\PiperchatHost.csproj", "{19F92EF8-CA3E-447B-9EF5-2DD1FDC90196}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEA7F57A-B994-4D94-A3E4-6634398FD3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA7F57A-B994-4D94-A3E4-6634398FD3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA7F57A-B994-4D94-A3E4-6634398FD3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA7F57A-B994-4D94-A3E4-6634398FD3BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F92EF8-CA3E-447B-9EF5-2DD1FDC90196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F92EF8-CA3E-447B-9EF5-2DD1FDC90196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F92EF8-CA3E-447B-9EF5-2DD1FDC90196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F92EF8-CA3E-447B-9EF5-2DD1FDC90196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9E8FA5E-11B9-4690-AAFA-D7E49B15B25D}
+	EndGlobalSection
+EndGlobal

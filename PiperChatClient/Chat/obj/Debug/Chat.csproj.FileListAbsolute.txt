@@ -1,0 +1,58 @@
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\Chat.csprojAssemblyReference.cache
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\MainWindow.g.cs
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\App.g.cs
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\Chat_MarkupCompile.cache
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\Chat_MarkupCompile.lref
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\App.baml
+C:\Users\Nitant\Source\Repos\Chat\Chat\bin\Debug\Chat.exe.config
+C:\Users\Nitant\Source\Repos\Chat\Chat\bin\Debug\Chat.exe
+C:\Users\Nitant\Source\Repos\Chat\Chat\bin\Debug\Chat.pdb
+C:\Users\Nitant\Source\Repos\Chat\Chat\bin\Debug\MaterialDesignColors.dll
+C:\Users\Nitant\Source\Repos\Chat\Chat\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Nitant\Source\Repos\Chat\Chat\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Nitant\Source\Repos\Chat\Chat\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Nitant\Source\Repos\Chat\Chat\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\MainWindow.baml
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\Chat.g.resources
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\Chat.csproj.CopyComplete
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\Chat.exe
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\Chat.pdb
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\UserControlMessageReceived.g.cs
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\UserControlMessageSent.g.cs
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\UserControlMessageReceived.baml
+C:\Users\Nitant\Source\Repos\Chat\Chat\obj\Debug\UserControlMessageSent.baml
+C:\Users\Nitant\source\repos\chat\Chat\obj\Debug\LoginWindow.g.cs
+C:\Users\Nitant\source\repos\chat\Chat\obj\Debug\LoginWindow.baml
+C:\Users\Nitant\source\repos\chat\Chat\obj\Debug\Registration.g.cs
+C:\Users\Nitant\source\repos\chat\Chat\obj\Debug\Registration.baml
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Chat.csprojAssemblyReference.cache
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\LoginWindow.g.cs
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\MainWindow.g.cs
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Registration.g.cs
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\UserControlMessageReceived.g.cs
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\UserControlMessageSent.g.cs
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\App.g.cs
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Chat_MarkupCompile.cache
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Chat_MarkupCompile.lref
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\App.baml
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\LoginWindow.baml
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\MainWindow.baml
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Registration.baml
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\UserControlMessageReceived.baml
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\UserControlMessageSent.baml
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Chat.g.resources
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Chat.pdb
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\bin\Debug\Chat.exe.config
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\bin\Debug\Chat.exe
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\bin\Debug\Chat.pdb
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\bin\Debug\MaterialDesignColors.dll
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\bin\Debug\MaterialDesignColors.pdb
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Chat.csproj.CopyComplete
+D:\College\Sem 6\SOC\Project\ClientCode\PiperChatClient\Chat\obj\Debug\Chat.exe

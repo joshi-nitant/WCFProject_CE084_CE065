@@ -1,0 +1,107 @@
+﻿<!--<Window x:Class="Chat.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chat"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="800">
+    <Grid>
+        <TextBox Text="Username" Name="Username" HorizontalAlignment="Left" Height="23" Margin="138,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="Email" Name="Email" HorizontalAlignment="Left" Height="23" Margin="140,160,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.063"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox Text="Contact_Number" Name="Contact_Number" HorizontalAlignment="Left" Height="23" Margin="138,189,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="About" Name="About" HorizontalAlignment="Left" Height="23" Margin="138,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="Location" Name="Location" HorizontalAlignment="Left" Height="23" Margin="138,245,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        
+        <Button Content="Singup" HorizontalAlignment="Left" Margin="138,295,0,0" VerticalAlignment="Top" Width="75" Click="SignUp"/>
+        <Button Content="Sign In" HorizontalAlignment="Left" Margin="254,295,0,0" VerticalAlignment="Top" Width="75" Click="SignIn"/>
+        <TextBox Name="Password" HorizontalAlignment="Left" Height="23" Margin="138,139,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>-->
+<Window  x:Class="Chat.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Chat"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Title="Registration" Height="450" Width="800">
+    <!--<Grid>
+        <Label Content="SignIn" HorizontalAlignment="Left" Margin="374,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="294,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="294,108,0,0" VerticalAlignment="Top"/>
+        <TextBox Name ="TEmail" HorizontalAlignment="Left" Height="23" Margin="374,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TPassword" HorizontalAlignment="Left" Height="23" Margin="374,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="SignIn" HorizontalAlignment="Left" Margin="446,159,0,0" VerticalAlignment="Top" Width="75" Click="Login"/>
+    </Grid>-->
+
+    <!--size heigh=600 width=1080-->
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="Green"/>
+                <GradientStop Color="Green"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#FFE4E4E4" Margin="0,-22,0,0">
+        </Border>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="350">
+                <StackPanel Margin="40 40">
+                    <TextBlock Margin="10,0,-454,10" Foreground="Green" TextAlignment="Center" FontSize="38" FontFamily="Great Vibes" Height="50"><Run Text="Registration"/><InlineUIContainer/></TextBlock>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="Green"/>
+                        <TextBox x:Name="TName" Margin="10 0" materialDesign:HintAssist.Hint="Name" Foreground="Green" Width="250" BorderBrush="Green" CaretBrush="Green" SelectionBrush="Green" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <materialDesign:PackIcon Kind="Email" Width="25" Height="25" Foreground="Green"/>
+                        <TextBox x:Name="TEmail" Margin="10 0" materialDesign:HintAssist.Hint="Email" Foreground="Green" Width="250" BorderBrush="Green" CaretBrush="Green" SelectionBrush="Green" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="Green"/>
+                        <PasswordBox x:Name="TPassword" Margin="10 0" materialDesign:HintAssist.Hint="Password" Foreground="Green" Width="250" BorderBrush="Green" CaretBrush="Green" SelectionBrush="Green" />
+                    </StackPanel>
+
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,300,10,57" HorizontalAlignment="Center">
+                <Button Width="100" Height="40" Style="{StaticResource MaterialDesignRaisedButton}" 
+                         materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Green"
+                         Background="Green" Foreground="White" ToolTip="Register" x:Name="btnLogin" Click="SignUp" Content="Register"/>
+            </StackPanel>
+            <StackPanel Width="348" RenderTransformOrigin="0.617,1.115" VerticalAlignment="Top" Margin="-140,105,-454,10">
+                <!--<Image Source="Images/ICON4801.png" Width="300" Height="300" VerticalAlignment="Top" Margin="30" Stretch="Fill" />-->
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <materialDesign:PackIcon Kind="Phone" Width="25" Height="25" Foreground="Green"/>
+                    <TextBox x:Name="TContact" Margin="10 0" materialDesign:HintAssist.Hint="Contact No" Foreground="Green" Width="250" BorderBrush="Green" CaretBrush="Green" SelectionBrush="Green" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <materialDesign:PackIcon Kind="About" Width="25" Height="25" Foreground="Green"/>
+                    <TextBox x:Name="TAbout" Margin="10 0" materialDesign:HintAssist.Hint="About" Foreground="Green" Width="250" BorderBrush="Green" CaretBrush="Green" SelectionBrush="Green" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <materialDesign:PackIcon Kind="Location" Width="25" Height="25" Foreground="Green"/>
+                    <TextBox x:Name="TLocation" Margin="10 0" materialDesign:HintAssist.Hint="Location" Foreground="Green" Width="250" BorderBrush="Green" CaretBrush="Green" SelectionBrush="Green" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Width="100"/>
+        </StackPanel>
+    </Grid>
+
+</Window>

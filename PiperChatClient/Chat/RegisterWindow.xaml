@@ -1,0 +1,20 @@
+﻿<Window x:Class="Chat.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chat"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid>
+        <!--<TextBox Text="Name" Name="TName" HorizontalAlignment="Left" Height="23" Margin="372,80,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="Email" Name="TEmail" HorizontalAlignment="Left" Height="23" Margin="372,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="Password" Name="TPassword" HorizontalAlignment="Left" Height="23" Margin="372,152,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="About" Name="TAbout" HorizontalAlignment="Left" Height="23" Margin="372,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="Location" Name="TLocation" HorizontalAlignment="Left" Height="23" Margin="372,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="Contact Number" Name="TContactNo" HorizontalAlignment="Left" Height="23" Margin="372,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>-->
+        <Button Content="SignUp" HorizontalAlignment="Left" Margin="345,203,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.074,0.71" Click="SignUp"  />
+       <Button Content="SignIn" HorizontalAlignment="Left" Margin="459,238,0,0" VerticalAlignment="Top" Width="75" Click="SignIn" />
+
+    </Grid>
+</Window>
